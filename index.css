@@ -1,0 +1,53 @@
+body {
+    background-color: white (104, 104, 104);
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 40px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: black;
+}
+
+h3 {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 40px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+p {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 40px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: black;
+}
+
+/* #clock {
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    margin: 30px
+} */
+
+div {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 40px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: Black;
+}
