@@ -36,12 +36,20 @@ p {
     color: black;
 }
 
-/* #clock {
-    font-size: 30px;
-    text-align: center;
-    color: white;
-    margin: 30px
-} */
+#paper_image {
+    width: 100px;
+    height: 100px;
+}
+
+#rock_image {
+    width: 100px;
+    height: 100px;
+}
+
+#scissors_image {
+    width: 100px;
+    height: 100px;
+}
 
 img {
     width: 100px;

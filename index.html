@@ -13,7 +13,22 @@
     <h1 id="main title">Rock, Paper, Scissors!</h1>
     <h3 id="current score">Current Score</h3>
     <div id="score"></div>
-    <div id="images"><img src="Images/rock.png"><img src="Images/paper.png"><img src="Images/scissors.png"></div>
+    <div id="images">
+        <div id="input_images">
+            <input type="image" id="rock_image" name="rock" src="Images/rock.png" alt="Rock"
+                onclick="alert('I am a rock!')">
+            <input type="image" id="paper_image" name="paper" src="Images/paper.png" alt="Paper"
+                onclick="alert('I am a sheet of paper!')">
+            <input type="image" id="scissors_image" name="scissors" src="Images/scissors.png" alt="Scissors"
+                onclick="alert('I am a pair of scissors!')">
+            <!-- <Button Name="paper" Click="OnClick5">
+            <Image Source="Images/paper.png"></Image>
+        </Button> -->
+
+            <!-- <img id="rock" src="Images/rock.png"><img id="paper" src="Images/paper.png"><img id="scissors"
+                src="Images/scissors.png"> -->
+        </div>
+    </div>
 </body>
 <script defer src="index.js"></script>
 
