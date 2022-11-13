@@ -43,6 +43,11 @@ p {
     margin: 30px
 } */
 
+img {
+    width: 100px;
+    height: 100px;
+}
+
 div {
     font-size: 30px;
     text-align: center;
