@@ -10,43 +10,27 @@ const rock_was_selected = document.getElementById("rock");
 //     console.log(e.type)
 //     console.log(e);
 // });
-rock_was_selected.addEventListener("click", function (e) {
-    // rock_was_clicked = e.target.innerHTML;
-    test(e.target.id);
-    console.log("clicked");
-    // console.log(e.type);
-    // console.log(e);
-    // console.log(rock_was_selected);
-    // console.log(rock_was_clicked);
-});
+rock_was_selected.addEventListener("click", game_logic);
 const paper_was_selected = document.getElementById("paper");
-// paper_was_selected.addEventListener("mouseover", function (e) {
-//     console.log(e.type)
-//     console.log(e);
-// });
-paper_was_selected.addEventListener("click", function (e) {
-    test(e.target.id);
-    paper_was_clicked = e.target.innerHTML;
-    console.log(e.type);
-    console.log(e);
-    console.log(paper_was_selected);
-    console.log(paper_was_clicked);
-});
-const scissors_was_selected = document.getElementById("scissors");
-// scissors_was_selected.addEventListener("mouseover", function (e) {
-//     console.log(e.type)
-//     console.log(e);
-// });
-scissors_was_selected.addEventListener("click", function (e) {
-    test(e.target.id);
-    scissors_was_clicked = e.target.innerHTML;
-    console.log(e.type);
-    console.log(e);
-    console.log(scissors_was_selected);
-    console.log(scissors_was_clicked);
-});
+paper_was_selected.addEventListener("click", game_logic);
 
-function test(element) {
-    console.log(`${element} was clicked`);
-    // document.getElementById("test").innerHTML = "A Rock was selected";
+const scissors_was_selected = document.getElementById("scissors");
+scissors_was_selected.addEventListener("click", game_logic);
+
+function game_logic(element) {
+    console.log("Game Logic Executed");
+    console.log(`${element.target.id} was clicked`);
+    image_selected = element.target.id;
+    if (image_selected == "rock") {
+        document.getElementById("test").innerHTML = "A Rock was selected";
+    }
+
+    if (image_selected == "paper") {
+        document.getElementById("test").innerHTML = "Paper was selected";
+    }
+
+    if (image_selected == "scissors") {
+        document.getElementById("test").innerHTML = "Scissors was selected";
+    }
+
 };
