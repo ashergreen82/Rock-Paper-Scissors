@@ -27,6 +27,15 @@ h3 {
     color: black;
 }
 
+h4 {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 40px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    color: black;
+}
+
 p {
     font-size: 30px;
     text-align: center;
@@ -44,6 +53,10 @@ p {
 #rock {
     width: 100px;
     height: 100px;
+}
+
+#current_score {
+    margin-top: 0px;
 }
 
 /* #rock:hover {
@@ -64,7 +77,6 @@ div {
     font-size: 30px;
     text-align: center;
     margin-top: 40px;
-    margin-top: 0px;
     margin-bottom: 0px;
     color: Black;
 }
