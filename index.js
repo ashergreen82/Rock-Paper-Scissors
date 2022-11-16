@@ -1,8 +1,16 @@
-// My event lisetners, one for each image.  The mouse hover was best done using CSS instead of trying to use the event listener.
+// game initilization.  Set the scores to 0.  I had to place the "Select: Rock, Paper, scissors", to give instructgion to the user, but also because
+// I didn't like how the screen jumped each time the use started the game to insert the results.  So it is also being used as a place holder.
+// Also notice that I have written this code to use functions as much as possible, even if it is only one line.  I am working to build this as a habit as I understand
+// this to be good coding practice.
 let computer_score = 0
 let user_score = 0
 document.getElementById("display_who_wins").innerHTML = "Select: Rock, Paper, Scissors";
 display_the_score();
+
+// My event lisetners, one for each image.  The mouse hover was best done using CSS instead of trying to use the event listener.
+// When using event listeners, the function needed has to be called without () as it automaticaly passes the event listener information over to the fucntion call.
+// Using a lambda function is possible with this format: const rock_was_selected.addEventListner("click", function(e) { .. }.
+// It is possible to pass another fucntion within the lambda function.
 const rock_was_selected = document.getElementById("rock");
 rock_was_selected.addEventListener("click", game_logic);
 
@@ -16,8 +24,6 @@ scissors_was_selected.addEventListener("click", game_logic);
 function game_logic(element) {
     display_the_score();
     let computer_choice = computer_makes_a_choice()
-    // console.log(computer_choice);
-    // computer_choice = "paper"
     image_selected = element.target.id;
     if (image_selected == computer_choice) {
         tie();
@@ -28,7 +34,6 @@ function game_logic(element) {
         } else if (computer_choice == "scissors") {
             user_wins();
         }
-        // document.getElementById("display_who_wins").innerHTML = "A Rock was selected";
     }
 
     if (image_selected == "paper") {
@@ -37,7 +42,6 @@ function game_logic(element) {
         } else if (computer_choice == "rock") {
             user_wins();
         }
-        // document.getElementById("display_who_wins").innerHTML = "Paper was selected";
     }
 
     if (image_selected == "scissors") {
@@ -46,7 +50,7 @@ function game_logic(element) {
         } else if (computer_choice == "paper") {
             user_wins();
         }
-        // document.getElementById("display_who_wins").innerHTML = "Scissors was selected";
+
     }
     function tie() {
         document.getElementById("display_who_wins").innerHTML = "It's a tie!  No points scored.";

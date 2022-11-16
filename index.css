@@ -27,15 +27,6 @@ h3 {
     color: black;
 }
 
-h4 {
-    font-size: 20px;
-    text-align: center;
-    margin-top: 40px;
-    margin-top: 0px;
-    margin-bottom: 20px;
-    color: black;
-}
-
 p {
     font-size: 30px;
     text-align: center;
@@ -58,10 +49,6 @@ p {
 #current_score {
     margin-top: 0px;
 }
-
-/* #rock:hover {
-    background-color: orange;
-} */
 
 #scissors_image {
     width: 100px;
