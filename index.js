@@ -1,4 +1,4 @@
-// game initilization.  Set the scores to 0.  I had to place the "Select: Rock, Paper, scissors", to give instructgion to the user, but also because
+// game initilization.  Set the scores to 0.  I had to place the "Select: Rock, Paper, scissors", to give instruction to the user, but also because
 // I didn't like how the screen jumped each time the use started the game to insert the results.  So it is also being used as a place holder.
 // Also notice that I have written this code to use functions as much as possible, even if it is only one line.  I am working to build this as a habit as I understand
 // this to be good coding practice.
