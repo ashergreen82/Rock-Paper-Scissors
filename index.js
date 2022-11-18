@@ -22,7 +22,6 @@ scissors_was_selected.addEventListener("click", game_logic);
 
 // And the game logic is over here.
 function game_logic(element) {
-    display_the_score();
     let computer_choice = computer_makes_a_choice()
     image_selected = element.target.id;
     if (image_selected == computer_choice) {
@@ -50,8 +49,10 @@ function game_logic(element) {
         } else if (computer_choice == "paper") {
             user_wins();
         }
-
     }
+
+    display_the_score();
+
     function tie() {
         document.getElementById("display_who_wins").innerHTML = "It's a tie!  No points scored.";
     }
